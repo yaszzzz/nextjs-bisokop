@@ -1,33 +1,15 @@
+"use client";
 import Link from "next/link";
+import MovieCarousel from "./components/CarousellHeroContent";
 
 export default function Home() {
 const newRellease = ['Fast X', 'Air','film','yeflou','jejutsu kaisen','Fast And Furios']
 
+
   return (
         <div>
             {/* Hero Section */}
-            <section className="konten">
-                <Link href="/pages/movie-page" className="anchor">
-                    <section className="hero">
-                        <div className="hero-content">
-                            <h2>Monkey Heist</h2>
-                            <p>110 Menit</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et.</p>
-                        </div>
-                        <img src="https://via.placeholder.com/300x200" alt="Monkey Heist" />
-                    </section>
-                </Link>
-                <Link href="/pages/movie-page" className="anchor">
-                    <section className="hero">
-                        <div className="hero-content">
-                            <h2>Monkey Heist</h2>
-                            <p>110 Menit</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et.</p>
-                        </div>
-                        <img src="https://via.placeholder.com/300x200" alt="Monkey Heist" />
-                    </section>
-                </Link>
-            </section>
+            <MovieCarousel />
 
             {/* Now Showing Section */}
             <a href="./pages/NowShowingPage.html" className="anchor">
