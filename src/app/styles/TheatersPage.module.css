@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .theaterContainer {
+    max-width: 1200px;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .theaterContainer h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .theaterContainer p {
+    font-size: 1rem;
+    color: #b3b3b3;
+    margin-bottom: 2rem;
+  }
+  
+  /* Theater Grid */
+  .theaterGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .theaterItem {
+    background-color: #8b0000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+  }
+  
+  .theaterItem:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Advertisement Section */
+  .advertisement {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .advertisement img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+  }
+  
