@@ -118,6 +118,18 @@ body {
 
 /* Movie Grid */
 .movie-grid {
+  scroll-behavior: smooth; /* Smooth scrolling untuk pengalaman pengguna lebih baik */
+  display: flex;
+  gap: 1rem;
+}
+
+.movie-item {
+  width: 150px;
+  text-align: center;
+}
+
+
+.movie-grid {
   display: flex;
   overflow-x: auto;
   gap: 1rem;

@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import MovieCarousel from "./components/CarousellHeroContent";
+import MovieGrid from "./components/NowShowing";
 
 export default function Home() {
 const newRellease = ['Fast X', 'Air','film','yeflou','jejutsu kaisen','Fast And Furios']
@@ -12,20 +13,10 @@ const newRellease = ['Fast X', 'Air','film','yeflou','jejutsu kaisen','Fast And 
             <MovieCarousel />
 
             {/* Now Showing Section */}
-            <a href="./pages/NowShowingPage.html" className="anchor">
+            <a href="/pages/now-showing" className="anchor">
                 <h2 className="section-title">Now Showing</h2>
             </a>
-            <div className="movie-grid">
-                {[...Array(9)].map((_, index) => (
-                    <Link key={index} href="/pages/movie-page-trailler" className="anchor">
-                        <div className="movie-item">
-                            <img src="https://via.placeholder.com/150x200" alt={`Movie ${index + 1}`} />
-                            <div className="movie-title">Movie Title {index % 2 + 1}</div>
-                            <div className="movie-description">110 Menit</div>
-                        </div>
-                    </Link>
-                ))}
-            </div>
+            <MovieGrid />
 
             {/* Coming Soon Section */}
             <h2 className="section-title">Coming Soon</h2>
