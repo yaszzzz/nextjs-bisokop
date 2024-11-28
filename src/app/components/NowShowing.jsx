@@ -19,15 +19,32 @@ export default function MovieGrid() {
         ref={gridRef}
       >
         {[...Array(9)].map((_, index) => (
-          <Link key={index} href="/pages/movie-page-trailler" className="anchor">
+          <Link
+            key={index}
+            href="/pages/movie-page-trailler"
+            className="anchor"
+          >
             <div className="movie-item flex-shrink-0">
+              <div className="wrapper">
+              <div className="card">
               <img
                 src="https://via.placeholder.com/150x200"
                 alt={`Movie ${index + 1}`}
                 className="rounded-lg"
               />
+                <div className="info">
+                  <h1>Mountain</h1>
+                  <p>
+                    Lorem Ipsum is simply dummy text from the printing and
+                    typeseting industry
+                  </p>
+                
+                </div>
+              </div>
+              </div>
+              
               <div className="movie-title text-center font-bold mt-2">
-                Movie Title {index % 2 + 1}
+                Movie Title {(index % 2) + 1}
               </div>
               <div className="movie-description text-center text-gray-500">
                 110 Menit
@@ -39,7 +56,7 @@ export default function MovieGrid() {
       {/* Panah kanan */}
       <button
         onClick={scrollRight}
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-neutral-600 text-white rounded-full p-2 shadow-md hover:bg-neutral-600 focus:outline-none"
+        className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-neutral-600 text-white rounded-full p-2 shadow-md hover:bg-neutral-400 focus:outline-none"
       >
         →
       </button>

@@ -20,6 +20,7 @@ const newRellease = ['Fast X', 'Air','film','yeflou','jejutsu kaisen','Fast And 
 
             {/* Coming Soon Section */}
             <h2 className="section-title">Coming Soon</h2>
+            <Link href="/pages/movie-page-trailler">
             <div className="movie-grid">
                 {[...Array(9)].map((_, index) => (
                     <div key={index} className="movie-item">
@@ -29,6 +30,7 @@ const newRellease = ['Fast X', 'Air','film','yeflou','jejutsu kaisen','Fast And 
                     </div>
                 ))}
             </div>
+            </Link>
 
             {/* New Releases Section */}
             <h2 className="nonton-section-title">New Releases</h2>

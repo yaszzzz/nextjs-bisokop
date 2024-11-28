@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/MoviePageTrailler.css';
+import '../styles/MoviePageTrailler.css'
 
 export default function MovieTrailer({
   title,

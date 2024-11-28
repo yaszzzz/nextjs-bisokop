@@ -1,6 +1,7 @@
 import React from 'react';
 import MovieTrailer from '../../components/MovieTrailler';
 
+
 export default function HomePage() {
   return (
     <div>
